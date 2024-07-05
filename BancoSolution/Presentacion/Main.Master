@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Presentacion.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <%--Menu principal--%>
+            <a href="Index.aspx">Inicio</a>
+            <a href="WFBank.aspx">Banco</a>
+            <a href="WFSubsidiary.aspx">Sucursal</a>
+            <a href="WFClient.aspx">Cliente</a>
+            <a href="WFProduct.aspx">Producto</a>
+            <a href="WFDepartment.aspx">Departamento</a>
+            <a href="WFMunicipality.aspx">Municipio</a>
+            <a href="#">Transferencia</a>
+           <%-- Aqui se muestra el contenido de los demas formularios--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
